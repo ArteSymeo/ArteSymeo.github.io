@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artemis Symeonidi - Experience</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff; /* White background */
+      color: #333; /* Text color for readability */
+    }
+
+    header {
+      background-color: #A9DAD6; /* Teal from the palette */
+      color: white; /* White text */
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #A9DAD6; /* Teal links */
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #70B7B3; /* Slightly darker teal for hover */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #ffffff; /* White content background */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      border-radius: 8px;
+    }
+
+    h1, h2 {
+      color: #70B7B3; /* Slightly darker teal for headings */
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #A9DAD6; /* Teal footer background */
+      color: white; /* White text */
+      margin-top: 20px;
+    }
+
+    .lang-toggle {
+      margin: 10px;
+      text-align: center;
+    }
+
+    .lang-toggle button {
+      margin: 5px;
+      padding: 8px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #A9DAD6; /* Teal buttons */
+      color: white; /* White text */
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .lang-toggle button:hover {
+      background-color: #70B7B3; /* Darker teal for hover */
+    }
+
+    /*  new CSS rules here */
+    /* Add your new CSS rules here */
+    .about-row {
+      display: flex;             /* Places image and text side by side */
+      align-items: flex-start;   /* Align them at the top (or 'center') */
+      gap: 20px;                 /* Spacing between image and text */
+      /* Optional: set a max-width, margin, etc., if desired */
+      /* max-width: 800px; */
+      /* margin: 0 auto; */
+    }
+
+    .about-row img {
+      max-width: 200px;          /* Restrict image width (adjust as needed) */
+      height: auto;              /* Maintain aspect ratio */
+    }
+
+    .about-text {
+      /* By default, <h2> and <p> will stack vertically */
+      /* You can add styles if you want specific spacing */
+    }
+
+    .about-text h2 {
+      margin-top: 0;             /* Remove default top margin if desired */
+    }
+    li {
+        margin-bottom: 1em; /* Adds space beneath each list item */
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>
+      <span data-lang="en">Artemis Symeonidi</span>
+      <span data-lang="fr" style="display: none;">Artemis Symeonidi</span>
+    </h1>
+    <p>
+      <span data-lang="en">FSP Psychologist </span>
+      <span data-lang="fr" style="display: none;">
+        Psychologue certifiée FSP
+      </span>
+    </p>
+  </header>
+
+  <div class="lang-toggle">
+    <button onclick="switchLanguage('en')">English</button>
+    <button onclick="switchLanguage('fr')">Français</button>
+  </div>
+
+  <nav>
+    <!-- Link back to the main page (About / Home) -->
+    <a href="index.html#about">
+      <span data-lang="en">About Me</span>
+      <span data-lang="fr" style="display: none;">À propos de moi</span>
+    </a>
+    <!-- Current page - Experience -->
+    <a href="experience.html">
+      <span data-lang="en">Experience</span>
+      <span data-lang="fr" style="display: none;">Expérience</span>
+    </a>
+
+
+    <!-- Link back to main page contact section -->
+    <a href="index.html#contact">
+      <span data-lang="en">Contact</span>
+      <span data-lang="fr" style="display: none;">Contact</span>
+    </a>
+  </nav>
+
+  <div class="container">
+    <!-- ================================= Therapeutic approach Section ================================= -->
+    <section id="Therapeutic approaches">
+    <h2>
+      <span data-lang="en">Therapeutic approaches</span>
+        <span data-lang="fr" style="display: none;">Approches thérapeutiques</span>
+    </h2>
+    <p>
+      <span data-lang="en">
+        My approach is tailored to each client's unique needs combining evidence-based strategies from different therapeutic modalities.
+        I draw from the following approaches to provide comprehensive and effective support:
+      </span>
+      <span data-lang="fr" style="display: none;">
+        Mon approche est adaptée aux besoins uniques de chaque client, combinant des stratégies basées
+        sur des preuves de différentes modalités thérapeutiques. Je puise dans les approches suivantes pour
+      </span>
+    </p>
+    <!-- English content -->
+    <span data-lang="en">
+      <ul>
+          <li>
+            <strong>Cognitive-Behavioural Therapy (CBT)</strong> - Cognitive-Behavioural Therapy is an evidence-based,
+            goal-oriented approach that explores how our thoughts,
+            feelings, and behaviors are interconnected. By identifying and challenging unhelpful thinking patterns,
+            clients learn practical strategies to develop healthier habits and coping skills.
+            This structured methodology empowers individuals to create meaningful, lasting changes in their daily lives.
+          </li>
+          <li>
+            <strong>Systemic Therapy</strong> - Systemic Therapy focuses on the dynamics within families, couples,
+            or broader social networks, viewing problems as arising from patterns of interaction rather than
+            just within the individual. By examining communication styles and relationship roles,
+            this approach helps identify and shift unhelpful patterns to foster healthier connections.
+            It emphasizes collaborative problem-solving and encourages a deeper understanding of each person’s perspective,
+            ultimately improving overall relationship functioning.
+          </li>
+          <li>
+            <strong>Compassion-focused Therapy</strong> - Compassion-focused Therapy is designed to help individuals cultivate self-kindness and
+            counteract unproductive self-criticism and shame. Through mindfulness, guided visualization,
+            and gentle exercises, clients learn to develop a more supportive inner dialogue.
+            By enhancing our capacity for warmth and understanding—both toward ourselves and others—this therapy fosters greater emotional resilience and well-being.
+          </li>
+      </ul>
+    </span>
+
+    <!-- French content (hidden) -->
+    <span data-lang="fr" style="display: none;">
+      <ul>
+          <li>
+          <strong>Thérapie cognitivo-comportementale (TCC)</strong> - La thérapie cognitivo-comportementale est une approche
+          axée sur les objectifs, basée sur des preuves, qui explore comment nos pensées, nos sentiments et nos comportements
+          sont interconnectés. En identifiant et en remettant en question les schémas de pensée non utiles, les clients apprennent
+          des stratégies pratiques pour développer des habitudes et des compétences d'adaptation plus saines. Cette méthodologie
+          structurée permet aux individus de créer des changements significatifs et durables dans leur vie quotidienne.
+          </li>
+          <li>
+          <strong>Thérapie systémique</strong> - La thérapie systémique se concentre sur la dynamique au sein des familles, des couples
+          ou des réseaux sociaux plus larges, considérant les problèmes comme découlant de schémas d'interaction plutôt que
+          seulement de l'individu. En examinant les styles de communication et les rôles relationnels, cette approche aide à
+          identifier et à modifier les schémas non utiles pour favoriser des connexions plus saines. Elle met l'accent sur la
+          résolution collaborative des problèmes et encourage une compréhension plus profonde de la perspective de chaque personne,
+          améliorant ainsi le fonctionnement relationnel global.
+          </li>
+          <li>
+          <strong>Thérapie axée sur la compassion</strong> - La thérapie axée sur la compassion est conçue pour aider les individus
+          à cultiver la bienveillance envers soi-même et à contrer l'autocritique et la honte non productives. Grâce à la pleine
+          conscience, à la visualisation guidée et à des exercices doux, les clients apprennent à développer un dialogue intérieur
+          plus favorable. En renforçant notre capacité à la chaleur et à la compréhension, à la fois envers nous-mêmes et envers les
+          autres, cette thérapie favorise une plus grande résilience émotionnelle et un bien-être.
+          </li>
+      </ul>
+    </span>
+    </section>
+  </div>
+  <footer>
+    <p>
+      <span data-lang="en">&copy; 2024 Artemis Symeonidi. All rights reserved.</span>
+      <span data-lang="fr" style="display: none;">
+        &copy; 2024 Artemis Symeonidi. Tous droits réservés.
+      </span>
+    </p>
+  </footer>
+
+  <script>
+    function switchLanguage(lang) {
+      const elements = document.querySelectorAll('[data-lang]');
+      elements.forEach((el) => {
+        if (el.getAttribute('data-lang') === lang) {
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

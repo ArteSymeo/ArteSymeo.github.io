@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pV+/9vgT1Ofp0GzM58dJ0bNkgrgrCAjqO7qKxvFtGF7ghzGJg50qIYF42zW3hMbKjje+TyJBy9FbnZc1Ux9m4g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <title>Artemis Symeonidi - Experience</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff; /* White background */
+      color: #333; /* Text color for readability */
+    }
+
+    header {
+      background-color: #A9DAD6; /* Teal from the palette */
+      color: white; /* White text */
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #A9DAD6; /* Teal links */
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #70B7B3; /* Slightly darker teal for hover */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #ffffff; /* White content background */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      border-radius: 8px;
+    }
+
+    h1, h2 {
+      color: #70B7B3; /* Slightly darker teal for headings */
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #A9DAD6; /* Teal footer background */
+      color: white; /* White text */
+      margin-top: 20px;
+    }
+
+    .lang-toggle {
+      margin: 10px;
+      text-align: center;
+    }
+
+    .lang-toggle button {
+      margin: 5px;
+      padding: 8px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #A9DAD6; /* Teal buttons */
+      color: white; /* White text */
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .lang-toggle button:hover {
+      background-color: #70B7B3; /* Darker teal for hover */
+    }
+
+    /*  new CSS rules here */
+    /* Add your new CSS rules here */
+    .about-row {
+      display: flex;             /* Places image and text side by side */
+      align-items: flex-start;   /* Align them at the top (or 'center') */
+      gap: 20px;                 /* Spacing between image and text */
+      /* Optional: set a max-width, margin, etc., if desired */
+      /* max-width: 800px; */
+      /* margin: 0 auto; */
+    }
+
+    .about-row img {
+      max-width: 200px;          /* Restrict image width (adjust as needed) */
+      height: auto;              /* Maintain aspect ratio */
+    }
+
+    .about-text {
+      /* By default, <h2> and <p> will stack vertically */
+      /* You can add styles if you want specific spacing */
+    }
+
+    .about-text h2 {
+      margin-top: 0;             /* Remove default top margin if desired */
+    }
+    li {
+        margin-bottom: 1em; /* Adds space beneath each list item */
+    }
+
+  a i {
+    margin-right: 1px; /* Space between icon and text */
+    color: #E74C3C; /* Red color to signify PDF */
+  }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>
+      <span data-lang="en">Artemis Symeonidi</span>
+      <span data-lang="fr" style="display: none;">Artemis Symeonidi</span>
+    </h1>
+    <p>
+      <span data-lang="en">FSP Psychologist </span>
+      <span data-lang="fr" style="display: none;">
+        Psychologue certifiée FSP
+      </span>
+    </p>
+  </header>
+
+  <div class="lang-toggle">
+    <button onclick="switchLanguage('en')">English</button>
+    <button onclick="switchLanguage('fr')">Français</button>
+  </div>
+
+  <nav>
+    <a href="index.html#about">
+      <span data-lang="en">About Me</span>
+      <span data-lang="fr" style="display: none;">À propos de moi</span>
+    </a>
+    <!-- Ling to offered services segment -->
+    <a href="index.html#Offered services">
+      <span data-lang="en">Offered Services</span>
+      <span data-lang="fr" style="display: none;">Services offerts</span>
+    </a>
+    <!-- Link to the separate Experience page -->
+    <a href="experience.html">
+      <span data-lang="en">My background</span>
+      <span data-lang="fr" style="display: none;">Mon expérience</span>
+    </a>
+    <!-- Link to therapeutic approaches segment -->
+    <a href=therapeutic_approaches.html>
+      <span data-lang="en">Therapeutic approaches</span>
+      <span data-lang="fr" style="display: none;">Approches thérapeutiques</span>
+    </a>
+    <a href="index.html#contact">
+      <span data-lang="en">Contact</span>
+      <span data-lang="fr" style="display: none;">Contact</span>
+    </a>
+  </nav>
+
+
+
+  <div class="container">
+    <section id="experience">
+      <h2>
+        <span data-lang="en">Experience</span>
+        <span data-lang="fr" style="display: none;">Expérience</span>
+      </h2>
+
+      <!-- Introductory Paragraph -->
+      <p>
+        <span data-lang="en">
+          Below is a brief outline of my educational and professional background.
+<!--          My detailed CV can be found <a href="assets/CV__EN.pdf" target="_blank" rel="noopener noreferrer">-->
+<!--          <i class="fas fa-file-pdf"></i>here-->
+<!--          </a>.-->
+        <!-- <a href="assets/CV__EN.pdf">here</a>-->
+        </span>
+        <span data-lang="fr" style="display: none;">
+          Vous trouverez ci-dessous un bref aperçu de mon parcours educatif et professionnel. Mon CV détaillé est disponible
+<!--          <a href="assets/CV__EN.pdf" target="_blank" rel="noopener noreferrer">-->
+<!--          <i class="fas fa-file-pdf"></i>ici-->
+<!--          </a>.-->
+        </span>
+      </p>
+      <!-- End of Introductory Paragraph -->
+
+      <!-- Academic Education Section -->
+      <h3>
+        <span data-lang="en">Academic Education</span>
+        <span data-lang="fr" style="display: none;">Formation Académique</span>
+      </h3>
+      <ul>
+        <li>
+          <span data-lang="en">
+            <strong>Diploma in Psychology</strong> – Panteion University of Social and Political Sciences, Athens, Greece.
+          </span>
+          <span data-lang="fr" style="display: none;">
+            <strong>Diplôme en psychologie</strong> – Université Panteion de sciences sociales et politiques, Athènes, Grèce.
+          </span>
+        </li>
+        <li>
+          <span data-lang="en">
+            <strong>Master's in Stress Science and Health Promotion</strong> – National and Kapodistrian University of Athens, Greece.
+          </span>
+          <span data-lang="fr" style="display: none;">
+            <strong>Master en sciences du stress et promotion de la santé</strong> – Université nationale et kapodistrienne d’Athènes, Grèce.
+          </span>
+        </li>
+        <li>
+          <span data-lang="en">
+            <strong>Master's in School Counselling and Guidance</strong> – National and Kapodistrian University of Athens, Greece.
+          </span>
+          <span data-lang="fr" style="display: none;">
+            <strong>Master en orientation et conseil scolaires</strong> – Université nationale et kapodistrienne d’Athènes, Grèce.
+          </span>
+        </li>
+        <li>
+          <span data-lang="en">
+            <strong>Master's in Strategic Human Resources Management</strong> – Alba Business School, American College of Greece, Athens, Greece.
+          </span>
+          <span data-lang="fr" style="display: none;">
+            <strong>Master en gestion stratégique des ressources humaines</strong> – Alba Business School, American College of Greece, Athènes, Grèce.
+          </span>
+        </li>
+      </ul>
+      <!-- End of Education Section -->
+
+      <!-- Start of Psychotherapy Education Section -->
+      <h3>
+        <span data-lang="en">Psychotherapy Training</span>
+        <span data-lang="fr" style="display: none;">Formation en Psychothérapie</span>
+      </h3>
+      <ul>
+      <li>
+        <span data-lang="en">
+          <strong>Certification in Cognitive and Behavioural Therapy (4-year program)</strong> (ongoing).
+          Organized by IPSEPA, accredited by the <a href="https://eabct.eu/"> European Association of Behavioural and Cognitive Therapies</a> (EABCT).
+        </span>
+        <span data-lang="fr" style="display: none;">
+          <strong>Certification en Thérapie Cognitive et Comportementale (programme de 3 ans)</strong>
+          (en cours). Organisée par l’IPSEPA et accréditée par l’ <a href="https://eabct.eu/"> European Association of Behavioural and Cognitive Therapies</a> (EABCT).
+        </span>
+      </li>
+
+      <li>
+        <span data-lang="en">
+          <strong>Certification in Systemic Therapy (4-year program)</strong>
+          (ongoing). Organized by ESYTHEPAS, accredited by the <a href="https://europeanfamilytherapy.eu/"> European Family Therapy Association</a> (EFTA).
+        </span>
+        <span data-lang="fr" style="display: none;">
+          <strong>Certification en Thérapie Systémique (programme de 4 ans)</strong>
+          (ongoing). Organisée par l’ESYTHEPAS et accréditée par l’ <a href="https://europeanfamilytherapy.eu/"> European Family Therapy Association</a> (EFTA).
+        </span>
+      </li>
+
+      <li>
+        <span data-lang="en">
+          <strong>Certification in Art Psychotherapy (150 hours)</strong>
+          (2023). Accredited by NOCN, organized by the Centre of Art Psychotherapy (Sinothisi).
+        </span>
+        <span data-lang="fr" style="display: none;">
+          <strong>Certification en Psychothérapie par l’art (150 heures)</strong>
+          (2023). Accréditée par NOCN et organisée par le Centre de psychothérapie de l’art (Sinothisi).
+        </span>
+      </li>
+
+
+
+      <li>
+        <span data-lang="en">
+          <strong>Certification in Compassion-Focused Therapy (CFT) (45 hours)</strong>
+          (2023). Organized by the Hellenic Society of Cognitive and Behavioural Studies.
+        </span>
+        <span data-lang="fr" style="display: none;">
+          <strong>Certification en Compassion-Focused Therapy (CFT) (45 heures)</strong>
+          (2023). Organisée par la Hellenic Society of Cognitive and Behavioural Studies.
+        </span>
+      </li>
+
+      <li>
+        <span data-lang="en">
+          <strong>Systemic Therapy for Children &amp; Adolescents (100 hours)</strong>
+          (2023). “Systemic treatment of children 3–12 years old: art and play in therapy,” organized by “Rodakino.”
+        </span>
+        <span data-lang="fr" style="display: none;">
+          <strong>Thérapie Systémique pour Enfants &amp; Adolescents (100 heures)</strong>
+          (2023). « Traitement systémique des enfants de 3 à 12 ans : art et jeu en thérapie », organisé par « Rodakino ».
+        </span>
+      </li>
+
+      <li>
+        <span data-lang="en">
+          <strong>Certification in Cognitive and Behavioural Therapy for Children &amp; Adolescents</strong>
+          (2023). Organized by the Hellenic Society of Cognitive &amp; Behavioural Studies.
+        </span>
+        <span data-lang="fr" style="display: none;">
+          <strong>Certification en Thérapie Cognitive et Comportementale pour enfants et adolescents</strong>
+          (2023). Organisée par la Hellenic Society of Cognitive &amp; Behavioural Studies.
+        </span>
+      </li>
+
+      <li>
+        <span data-lang="en">
+          <strong>Training in Cognitive &amp; Behavioural Therapy (2-year)</strong>
+         (2022). Organized by EPIPSY, Division of Psychiatry at the National Kapodistrian University of Athens, accredited by the European Association of BCT.
+        </span>
+        <span data-lang="fr" style="display: none;">
+          <strong>Formation en Thérapie Cognitive et Comportementale (2 ans)</strong>
+          (2022). Organisée par EPIPSY, division de psychiatrie de l’Université Kapodistrienne d’Athènes et accréditée par l’European Association of BCT.
+        </span>
+      </li>
+      </ul>
+
+
+      <!-- End of Psychotherapy Education Section -->
+
+
+      <!-- Professional Experience Section -->
+<!-- Professional Experience Section -->
+<h3>
+  <span data-lang="en">Professional Experience</span>
+  <span data-lang="fr" style="display: none;">Expérience Professionnelle</span>
+</h3>
+<ul>
+    <li>
+    <span data-lang="en">
+      <strong>School Psychologist</strong> – Conducted comprehensive psychological and educational evaluations,
+      provided counseling to students, collaborated with educators and parents to develop individualized
+      educational plans, and implemented programs to enhance student well-being.
+    </span>
+    <span data-lang="fr" style="display: none;">
+      <strong>Psychologue Scolaire</strong> – Réalisé des évaluations psychologiques et éducatives,
+      offert un accompagnement aux élèves, collaboré avec les enseignants et les parents pour établir
+      des plans éducatifs individualisés, et mis en œuvre des programmes pour améliorer le bien-être des élèves.
+    </span>
+    </li>
+
+    <li>
+    <span data-lang="en">
+      <strong>Independent Psychologist</strong> – Provided individualized counseling sessions,
+      developed therapeutic interventions tailored to client needs, and maintained confidential client records.
+    </span>
+    <span data-lang="fr" style="display: none;">
+      <strong>Psychologue Indépendante</strong> – Offert des séances de consultation individualisées,
+      développé des interventions thérapeutiques adaptées aux besoins des clients et maintenu la
+      confidentialité des dossiers clients.
+    </span>
+    </li>
+
+    <li>
+    <span data-lang="en">
+      <strong>Early Childhood Educator</strong> – Provided care and support to young children,
+      implemented educational activities, and collaborated with families to foster healthy development.
+    </span>
+    <span data-lang="fr" style="display: none;">
+      <strong>Éducatrice de la Petite Enfance</strong> – Offert des soins et un soutien aux jeunes enfants,
+      mis en place des activités éducatives et collaboré avec les familles pour favoriser un développement sain.
+    </span>
+  </li>
+
+  <li>
+    <span data-lang="en">
+      <strong>Research Assistant</strong> – Assisted with data collection, analysis,
+      and literature reviews for various research projects in psychology.
+    </span>
+    <span data-lang="fr" style="display: none;">
+      <strong>Assistante de Recherche</strong> – Aidé à la collecte de données, à l'analyse
+      et à la revue de la littérature pour divers projets de recherche en psychologie.
+    </span>
+  </li>
+</ul>
+
+
+
+
+
+
+      <!-- End of Professional Experience Section -->
+    </section>
+  </div>
+  <footer>
+    <p>
+      <span data-lang="en">&copy; 2024 Artemis Symeonidi. All rights reserved.</span>
+      <span data-lang="fr" style="display: none;">
+        &copy; 2024 Artemis Symeonidi. Tous droits réservés.
+      </span>
+    </p>
+  </footer>
+
+  <script>
+    function switchLanguage(lang) {
+      const elements = document.querySelectorAll('[data-lang]');
+      elements.forEach((el) => {
+        if (el.getAttribute('data-lang') === lang) {
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

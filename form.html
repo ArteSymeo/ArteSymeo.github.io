@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Artemis Symeonidi - Contact Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff; /* White background */
+      color: #333; /* Text color for readability */
+    }
+
+    header {
+      background-color: #A9DAD6; /* Teal from the palette */
+      color: white; /* White text */
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #A9DAD6; /* Teal links */
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #70B7B3; /* Slightly darker teal for hover */
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #ffffff; /* White content background */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+      border-radius: 8px;
+    }
+
+    h1, h2 {
+      color: #70B7B3; /* Slightly darker teal for headings */
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #A9DAD6; /* Teal footer background */
+      color: white; /* White text */
+      margin-top: 20px;
+    }
+
+    .lang-toggle {
+      margin: 10px;
+      text-align: center;
+    }
+
+    .lang-toggle button {
+      margin: 5px;
+      padding: 8px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      background-color: #A9DAD6; /* Teal buttons */
+      color: white; /* White text */
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .lang-toggle button:hover {
+      background-color: #70B7B3; /* Darker teal for hover */
+    }
+
+    /* Existing rules (for other pages) */
+    .about-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+    }
+    .about-row img {
+      max-width: 200px;
+      height: auto;
+    }
+    .about-text h2 {
+      margin-top: 0;
+    }
+    li {
+      margin-bottom: 1em;
+    }
+
+    /* ========== New Form Styling ========== */
+    .contact-intro {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    form.contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px; /* Constrain form width */
+      margin: 0 auto;   /* Center form horizontally */
+    }
+
+    form.contact-form label {
+      font-weight: bold;
+    }
+
+    form.contact-form input,
+    form.contact-form textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font: inherit;
+    }
+
+    form.contact-form button[type="submit"] {
+      background-color: #A9DAD6;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    form.contact-form button[type="submit"]:hover {
+      background-color: #70B7B3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>
+      <span data-lang="en">Artemis Symeonidi</span>
+      <span data-lang="fr" style="display: none;">Artemis Symeonidi</span>
+    </h1>
+    <p>
+      <span data-lang="en">FSP Psychologist</span>
+      <span data-lang="fr" style="display: none;">
+        Psychologue certifiée FSP
+      </span>
+    </p>
+  </header>
+
+  <div class="lang-toggle">
+    <button onclick="switchLanguage('en')">English</button>
+    <button onclick="switchLanguage('fr')">Français</button>
+  </div>
+
+  <nav>
+    <a href="index.html#about">
+      <span data-lang="en">About Me</span>
+      <span data-lang="fr" style="display: none;">À propos de moi</span>
+    </a>
+    <a href="experience.html">
+      <span data-lang="en">Experience</span>
+      <span data-lang="fr" style="display: none;">Expérience</span>
+    </a>
+    <a href="therapeutic_approaches.html">
+      <span data-lang="en">Therapeutic approaches</span>
+      <span data-lang="fr" style="display: none;">Approches thérapeutiques</span>
+    </a>
+    <a href="index.html#contact">
+      <span data-lang="en">Contact Details</span>
+      <span data-lang="fr" style="display: none;">Détails de contact</span>
+    </a>
+  </nav>
+
+  <div class="container">
+    <!-- =========== Contact Section =========== -->
+    <h2>
+      <span data-lang="en">Contact</span>
+      <span data-lang="fr" style="display: none;">Contact</span>
+    </h2>
+
+    <p class="contact-intro">
+      <span data-lang="en">
+        Hello and thank you for your interest! Please feel free to send me a message if you have any
+        questions, concerns, or if you’d like to schedule an appointment. I look forward to hearing from you.
+      </span>
+      <span data-lang="fr" style="display: none;">
+        Bonjour et merci de votre intérêt ! N'hésitez pas à m'envoyer un message si vous avez des questions,
+        des préoccupations ou si vous souhaitez fixer un rendez-vous. Au plaisir d’avoir de vos nouvelles.
+      </span>
+    </p>
+
+    <form class="contact-form" action="https://formspree.io/f/manqyorw" method="POST">
+      <!-- Name -->
+      <label for="name">
+        <span data-lang="en">Name:</span>
+        <span data-lang="fr" style="display: none;">Nom :</span>
+      </label>
+      <input type="text" id="name" name="name" required />
+
+      <!-- Email -->
+      <label for="email">
+        <span data-lang="en">Email:</span>
+        <span data-lang="fr" style="display: none;">E-mail :</span>
+      </label>
+      <input type="email" id="email" name="email" required />
+
+      <!-- Message -->
+      <label for="message">
+        <span data-lang="en">Message:</span>
+        <span data-lang="fr" style="display: none;">Message :</span>
+      </label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <!-- Submit button -->
+      <button type="submit">
+        <span data-lang="en">Send</span>
+        <span data-lang="fr" style="display: none;">Envoyer</span>
+      </button>
+    </form>
+  </div>
+
+  <footer>
+    <p>
+      <span data-lang="en">&copy; 2024 Artemis Symeonidi. All rights reserved.</span>
+      <span data-lang="fr" style="display: none;">
+        &copy; 2024 Artemis Symeonidi. Tous droits réservés.
+      </span>
+    </p>
+  </footer>
+
+  <script>
+    function switchLanguage(lang) {
+      const elements = document.querySelectorAll('[data-lang]');
+      elements.forEach((el) => {
+        if (el.getAttribute('data-lang') === lang) {
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

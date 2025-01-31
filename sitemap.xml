@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://artesymeo.github.io/</loc>
+    <loc>https://artesymeo.github.io/index.html</loc>
     <lastmod>2025-01-23</lastmod>
     <priority>1.0</priority>
 
@@ -16,7 +16,7 @@
    <url>
     <loc>https://artesymeo.github.io/therapeutic_approaches.html</loc>
     <lastmod>2025-01-23</lastmod>
-     <priority>0.8</priority>
+     <priority>0.7</priority>
 
    </url>
 

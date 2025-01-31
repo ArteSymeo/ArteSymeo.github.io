@@ -3,15 +3,21 @@
   <url>
     <loc>https://artesymeo.github.io/</loc>
     <lastmod>2025-01-23</lastmod>
+    <priority>1.0</priority>
+
   </url>
 
   <url>
     <loc>https://artesymeo.github.io/experience.html</loc>
     <lastmod>2025-01-23</lastmod>
+    <priority>0.8</priority>
+
   </url>
    <url>
     <loc>https://artesymeo.github.io/therapeutic_approaches.html</loc>
     <lastmod>2025-01-23</lastmod>
-  </url>
+     <priority>0.8</priority>
+
+   </url>
 
 </urlset>
